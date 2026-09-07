@@ -10,7 +10,7 @@ import { loginSchema, type LoginFormValues } from "@/schemas/auth.schema";
 import { m } from "motion/react";
 import axios from "axios";
 
-const GOOGLE_AUTH_URL = `${import.meta.env.VITE_APP_URL ?? "http://localhost:3000/v1"}/auth/google`;
+const GOOGLE_AUTH_URL = `${import.meta.env.VITE_APP_URL ?? "https://duwitku-backend.vercel.app/v1"}/auth/google`;
 
 export function LoginPage() {
   const navigate = useNavigate();

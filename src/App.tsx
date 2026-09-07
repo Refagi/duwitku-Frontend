@@ -16,7 +16,6 @@ const HistoryPage = lazy(() => import("@/pages/histories/HistoryPage").then(m =>
 const ReportsPage = lazy(() => import("@/pages/reports/ReportsPage").then(m => ({ default: m.ReportsPage })));
 const SavingsPage = lazy(() => import("@/pages/savings/SavingsPage").then(m => ({ default: m.SavingsPage })));
 
-
 function App() {
   useThemeSync();
   return (
@@ -27,7 +26,6 @@ function App() {
             <Route path="/login" element={<LoginPage />} />
             <Route path="/register" element={<RegisterPage />} />
           </Route>
-          {/* <Route path="/auth/google/callback" element={<GoogleCallbackPage />} /> */}
 
           <Route
             path="/"
@@ -47,7 +45,6 @@ function App() {
             
           </Route>
 
-          {/* <Route path="/" element={<Navigate to="/login" replace />} /> */}
           <Route path="*" element={<NotFoundPage />} />
         </Routes>
       </Suspense>

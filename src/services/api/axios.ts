@@ -6,7 +6,7 @@ import { queryClient } from "@/lib/queryClient";
 import { authKeys } from "@/lib/queryKeys";
 
 
-const API_BASE = import.meta.env.VITE_APP_URL ?? 'http://localhost:3000/v1'
+const API_BASE = import.meta.env.VITE_APP_URL ?? 'https://duwitku-backend.vercel.app/v1'
 
 export const api = axios.create({
   baseURL:         API_BASE,
